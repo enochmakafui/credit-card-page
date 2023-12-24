@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.head-part {
+  background-image: url("/images/bg-main-mobile.png");
+  width: 100%;
+  height: 240px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  padding-top: 3rem;
+}
+img {
+  width: 100%;
+}
+
+.card-back {
+  background-image: url("/images/bg-card-back.png");
+  height: 200px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 3rem;
+  margin-right: 0.7rem;
+  padding: 0;
+  /* position: relative; */
+  z-index: 999px;
+}
+.confirmed-cvc {
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 7.8rem;
+  left: 80%;
+}
+.card-front {
+  background-image: url("/images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: -5rem;
+  margin-left: 0.5rem;
+  margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  height: 200px;
+  padding: 0.9rem 1rem 0.5rem 1rem;
+  font-size: 1.3rem;
+  z-index: 1000px;
+}
+.card-front .card-number {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  padding: 0;
+
+  font-size: 1.5rem;
+  margin: 0;
+}
+.card-logo {
+  margin-bottom: 0.4rem;
+}
+
+.card-front .confrimed-details {
+  display: flex;
+
+  flex-flow: column nowrap;
+  color: hsl(0, 0%, 100%);
+
+  padding-top: 0.3rem;
+  /* margin-top: 2rem; */
+}
+.card-front .personal-details {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.card-details {
+  margin-top: 9rem;
+}
+.card-details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.year-details {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+.year-details-label {
+  display: flex;
+  gap: 4.5rem;
+}
+.month,
+.year {
+  width: 30%;
+}
+.cvc {
+  width: 40%;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+input {
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  outline: none;
+  border-color: rgba(128, 128, 128, 0.363);
+}
+.submit-btn {
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Desktop design */
+
+@media (min-width: 800px) {
+}
